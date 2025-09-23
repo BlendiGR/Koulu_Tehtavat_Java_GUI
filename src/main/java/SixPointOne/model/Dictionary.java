@@ -1,4 +1,4 @@
-package model;
+package SixPointOne.model;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,8 +1,6 @@
-package controller;
+package SixPointOne.controller;
 
-import model.Dictionary;
-
-import java.util.NoSuchElementException;
+import SixPointOne.model.Dictionary;
 
 public class DictionaryController {
     private final Dictionary dictionary;

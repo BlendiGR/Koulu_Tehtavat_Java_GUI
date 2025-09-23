@@ -1,6 +1,6 @@
-package view;
+package SixPointOne.view;
 
-import controller.DictionaryController;
+import SixPointOne.controller.DictionaryController;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
