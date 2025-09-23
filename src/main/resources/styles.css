@@ -1,4 +1,75 @@
-.headerMain {
-    -fx-font-size: 14px;
+.app {
+    -fx-background-color: linear-gradient(to bottom, #f7f7f9, #ececf1);
+    -fx-padding: 8;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+.header {
+    -fx-font-size: 16px;
     -fx-font-weight: bold;
+    -fx-text-fill: #222;
+    -fx-padding: 10 0 14 0;
+    -fx-border-color: transparent transparent #ddd transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.field-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #444;
+    -fx-font-weight: semi-bold;
+}
+
+.input,
+.input:focused,
+.combo-box,
+.text-field {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+.input {
+    -fx-background-color: white;
+    -fx-border-color: #d6d9e0;
+    -fx-border-width: 1;
+    -fx-padding: 8 10;
+}
+
+.input:focused {
+    -fx-border-color: #7b61ff;
+    -fx-effect: dropshadow(three-pass-box, rgba(123,97,255,0.18), 8, 0.2, 0, 0);
+}
+
+.result {
+    -fx-background-color: #fafafa;
+    -fx-text-fill: #333;
+    -fx-opacity: 1.0;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 6 10;
+}
+
+.primary {
+    -fx-background-color: linear-gradient(to bottom, #7b61ff, #634dff);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18;
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-cursor: hand;
+}
+
+.primary:hover {
+    -fx-background-color: linear-gradient(to bottom, #866dff, #6e59ff);
+}
+
+.primary:armed {
+    -fx-background-color: linear-gradient(to bottom, #6e59ff, #5746e8);
+}
+
+.gridpane {
+    -fx-hgap: 12;
+    -fx-vgap: 10;
+    -fx-padding: 16;
 }
