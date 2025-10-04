@@ -1,6 +1,6 @@
-package SixPointTwo;
+package SevenPointTwo;
 
-import SixPointTwo.view.ConverterView;
+import SevenPointTwo.view.ConverterView;
 
 public class Main {
     public static void main(String[] args) {

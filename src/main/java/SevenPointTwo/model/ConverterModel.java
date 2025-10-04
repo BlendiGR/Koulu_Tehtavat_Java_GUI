@@ -1,9 +1,4 @@
-package SixPointTwo.model;
-
-import SixPointTwo.data.CurrencyDao;
-import SixPointTwo.entity.Currency;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+package SevenPointTwo.model;
 
 public class ConverterModel {
 

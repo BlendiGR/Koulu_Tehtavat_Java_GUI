@@ -1,8 +1,8 @@
 // CurrencyDao.java
-package SixPointTwo.data;
+package SevenPointTwo.data;
 
-import SixPointTwo.entity.Currency;
-import SixPointTwo.datasource.MariaDbConnection;
+import SevenPointTwo.entity.Currency;
+import SevenPointTwo.datasource.MariaDbConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

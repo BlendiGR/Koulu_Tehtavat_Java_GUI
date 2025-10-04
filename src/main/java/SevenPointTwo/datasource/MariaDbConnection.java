@@ -1,4 +1,4 @@
-package SixPointTwo.datasource;
+package SevenPointTwo.datasource;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,8 +1,8 @@
-package SixPointTwo.view;
+package SevenPointTwo.view;
 
-import SixPointTwo.controller.ConverterController;
-import SixPointTwo.model.ConverterModel;
-import SixPointTwo.entity.Currency;
+import SevenPointTwo.controller.ConverterController;
+import SevenPointTwo.model.ConverterModel;
+import SevenPointTwo.entity.Currency;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
