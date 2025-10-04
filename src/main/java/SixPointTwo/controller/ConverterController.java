@@ -1,6 +1,7 @@
 package SixPointTwo.controller;
 
-import SixPointTwo.Currency;
+import SixPointTwo.data.CurrencyDao;
+import SixPointTwo.entity.Currency;
 import SixPointTwo.model.ConverterModel;
 import SixPointTwo.view.ConverterView;
 import javafx.scene.control.TextFormatter;
@@ -11,7 +12,7 @@ import java.util.function.UnaryOperator;
 public class ConverterController {
     private final ConverterModel model;
     private final ConverterView view;
-
+    private final CurrencyDao dao = new CurrencyDao();
 
     public ConverterController(ConverterModel model, ConverterView view) {
         this.model = model;
@@ -19,8 +20,8 @@ public class ConverterController {
     }
 
     public void init() {
-        view.getFromBox().setItems(model.getCurrencies());
-        view.getToBox().setItems(model.getCurrencies());
+        view.getFromBox().setItems(dao.getCurrencyList());
+        view.getToBox().setItems(dao.getCurrencyList());
 
         UnaryOperator<TextFormatter.Change> filter = change -> {
             String text = change.getControlNewText();
@@ -43,8 +44,16 @@ public class ConverterController {
             Currency from = view.getFromBox().getValue();
             Currency to = view.getToBox().getValue();
 
-            if (from == null || to == null) { showError("Choose both currencies."); return; }
-            double result = model.converter(amount, from, to);
+            if (from == null || to == null){
+                throw new Exception("Pick both currencies.");
+            }
+
+            double fromRate = dao.getCurrency(from.getCode());
+            double toRate = dao.getCurrency(to.getCode());
+
+
+
+            double result = model.converter(amount, fromRate, toRate);
 
             view.getResultField().setText(String.valueOf(result));
 

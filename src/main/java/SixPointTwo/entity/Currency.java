@@ -1,4 +1,4 @@
-package SixPointTwo;
+package SixPointTwo.entity;
 
 public class Currency {
     private final String code;

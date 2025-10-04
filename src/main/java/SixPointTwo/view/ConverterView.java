@@ -2,7 +2,7 @@ package SixPointTwo.view;
 
 import SixPointTwo.controller.ConverterController;
 import SixPointTwo.model.ConverterModel;
-import SixPointTwo.Currency;
+import SixPointTwo.entity.Currency;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
@@ -30,7 +30,7 @@ public class ConverterView extends Application {
         BorderPane root = new BorderPane();
 
         Label headerMain = new Label("Enter an amount, choose currencies, then press Convert.");
-        headerMain.getStyleClass().add("header"); // use one header class
+        headerMain.getStyleClass().add("header");
         BorderPane.setAlignment(headerMain, Pos.CENTER);
         BorderPane.setMargin(headerMain, new Insets(10, 0, 20, 0));
         root.setTop(headerMain);
